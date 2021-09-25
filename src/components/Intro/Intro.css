@@ -1,0 +1,16 @@
+
+
+.intro-container{
+    background-color: #B2AB8C;
+    padding: 0;
+    
+}
+
+.intro-content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.intro-content > p, h2 {
+    color:#293B5F;
+}
