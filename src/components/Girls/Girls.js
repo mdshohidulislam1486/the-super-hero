@@ -16,7 +16,11 @@ useEffect(()=>{
         <div className='container'>
             <div className='card-container'>
                 {
-                    girls.map(girl =><Card girl={girl}></Card>) 
+                    girls.map(girl =><Card
+                        key={girl.name}
+                        girl={girl}>
+
+                        </Card>) 
                 } 
             </div>
             <div>
