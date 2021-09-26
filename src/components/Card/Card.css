@@ -10,7 +10,7 @@
 
 .single-cart img{
     width: 280px;
-    height: 230px;
+    height: 230px; 
     border-radius: 50%;
 }
 
@@ -27,4 +27,8 @@
     border: 1px solid lightcyan;
     border-radius: 3px;
     cursor: pointer;
+}
+.details >h2, p {
+    color: #293B5F;
+
 }

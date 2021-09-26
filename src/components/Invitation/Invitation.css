@@ -4,7 +4,32 @@
 }
 
 .invited-guest{
-    display: grid;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: 1;
+    background-color: #47597E;
+    margin: 5px;
+    padding: 0 10px;
+    
 }
 
+.invited-guest h5{
+    margin-left:3px;
+    color: #DBE6FD;
+}
+.cost{
+    background-color: #47597E;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.cost h5{
+    color: #DBE6FD;
+}
+.cost h3{
+    color: #DBE6FD;
+}
+.cost p{
+    color: #DBE6FD;
+}

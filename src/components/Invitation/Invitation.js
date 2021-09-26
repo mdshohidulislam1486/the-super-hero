@@ -16,11 +16,14 @@ const Invitation = (props) => {
 
     return (
         <div className='invitation-container'>
-            <h2>Total guests invited: {invited.length} </h2>
-            <p>Invitation Cost: ${invitationCost}</p>
-            <div className="invited-guest">
+            <div className='cost'>
+                <h3>Invite your favourite celebrities</h3>
+                <h5>Celebrity invited: {invited.length} </h5>
+                <p>Invitation Cost: ${invitationCost}</p>
+            </div>
+            <div>
               { 
-               invited.map(name =><div><div><img src={name.img} alt="" /></div> <h5>{name.name}</h5></div>)
+               invited.map(name =><div className="invited-guest"><div><img src={name.img} alt="" /></div> <h5>{name.name}</h5></div>)
               }
             </div> 
         </div>

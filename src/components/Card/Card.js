@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {  faHeartBroken} from '@fortawesome/free-solid-svg-icons';
 
 
-
+ 
 const Card = (props) => {
     const {name, age, residence, cost, img, profession} = props.girl
     return (
@@ -18,7 +18,7 @@ const Card = (props) => {
                 <p>Proession: {profession}</p>
                 <p>Lives in: {residence}</p>
                 <p>Invitation Cost: {cost}</p>
-                <button onClick={()=>props.invitationHandle(props.girl)}> <FontAwesomeIcon icon={faAngleRight} /> Invite</button>
+                <button onClick={()=>props.invitationHandle(props.girl)}> <FontAwesomeIcon icon={faHeartBroken} /> Invite</button>
             </div>
         </div>
     );
