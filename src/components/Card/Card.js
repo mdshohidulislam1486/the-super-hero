@@ -3,7 +3,7 @@ import './Card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faHeartBroken} from '@fortawesome/free-solid-svg-icons';
 
-
+ 
  
 const Card = (props) => {
     const {name, age, residence, cost, img, profession} = props.girl

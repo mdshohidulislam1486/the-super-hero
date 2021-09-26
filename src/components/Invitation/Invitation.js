@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './Invitation.css'
 
 const Invitation = (props) => {
-    console.log(props.invited)
     const {invited} = props;
 
     
@@ -23,7 +21,7 @@ const Invitation = (props) => {
             </div>
             <div>
               { 
-               invited.map(name =><div className="invited-guest"><div><img src={name.img} alt="" /></div> <h5>{name.name}</h5></div>)
+               invited.map(name =><div className="invited-guest" key ={name.name}><div><img src={name.img} alt="" /></div> <h5>{name.name}</h5></div>)
               }
             </div> 
         </div>

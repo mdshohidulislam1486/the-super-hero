@@ -15,8 +15,15 @@ useEffect(()=>{
 }, [])
 
 const invitationHandle=girl=>{
-        const invitationList = [...invited, girl]
-        setInvited(invitationList)
+    
+        let invitationList = [...invited]
+        if(invitationList.includes(girl)){
+            return
+        } else{
+            invitationList = [...invited, girl]
+            setInvited(invitationList)
+        }
+        
 
 }
     return (
