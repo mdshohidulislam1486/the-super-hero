@@ -15,7 +15,7 @@ const Card = (props) => {
             <div className="details">
                 <h2>{name}</h2>
                 <p>Age: {age}</p>
-                <p>Proession: {profession}</p>
+                <p>Profession: {profession}</p>
                 <p>Lives in: {residence}</p>
                 <p>Invitation Cost: {cost}</p>
                 <button onClick={()=>props.invitationHandle(props.girl)}> <FontAwesomeIcon icon={faHeartBroken} /> Invite</button>
