@@ -1,0 +1,10 @@
+.invited-guest img{
+    width: 40px;
+    height: 40px;
+}
+
+.invited-guest{
+    display: grid;
+    grid-template-columns: 1;
+}
+

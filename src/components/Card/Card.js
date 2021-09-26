@@ -1,8 +1,11 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleRight} from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Card = (props) => {
-    console.log(props)
     const {name, age, residence, cost, img, profession} = props.girl
     return (
         <div className='single-cart'>
@@ -15,6 +18,7 @@ const Card = (props) => {
                 <p>Proession: {profession}</p>
                 <p>Lives in: {residence}</p>
                 <p>Invitation Cost: {cost}</p>
+                <button onClick={()=>props.invitationHandle(props.girl)}> <FontAwesomeIcon icon={faAngleRight} /> Invite</button>
             </div>
         </div>
     );

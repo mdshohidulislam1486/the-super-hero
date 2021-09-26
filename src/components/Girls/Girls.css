@@ -5,5 +5,9 @@
 }
 .container{
     display: grid;
-    grid-template-columns: 3fr .7fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.invitation-list{
+margin-left: -10px;
 }
